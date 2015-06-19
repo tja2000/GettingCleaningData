@@ -1,6 +1,5 @@
-# GettingCleaningData
-Course project for Getting and Cleaning Data module
+# Purpose of the script
 
-# How to use this script
+# How to use the script
 
 # CODEBOOK

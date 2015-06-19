@@ -1,5 +1,6 @@
 # How the script works
-## Approach
+## My interpretation of the project
+
 x_*.txt contains the actual data, no headers.
 
 y_*.txt contains a ref. to the activity labels (6 labels) for each variable.
@@ -20,7 +21,7 @@ In the final tidy DS we should end up with something like:
 
 Where:
 
-Activity  : one of the following values {walking,walking_upstairs,walking_downstairs,sitting,standing, laying}
+Activity  : one of the following values {walking,walking_upstairs,walking_downstairs,sitting,standing,laying}
 
 Subject   : a number from 1 to 30
 
@@ -29,13 +30,12 @@ feature_i  : a clear and meaningfull description of the feature (only the means 
 ##The algorithm, for more details see the R script:
 
 1. create a list with headers from features.txt. This part includes cleaning and providing clear names for variables.
-2. add an extra column with "activity"
-3. fill this column with resolved activity (activity number is replaced by its name from activit_lables.txt)
+2. add an extra column with "activity" and fill this column with resolved activity (activity number is replaced by its name from activity_lables.txt)
 4. add an extra colmun with "subject"
-4. Fill the other columns with the data coming from x_*.txt
+4. fill the other columns with the data coming from x_*.txt (the sample data)
 5. Do this for both DS (DS_train, DS_test)
-6. Create a new DS with sames number of colmuns as the previous ones
-7. Add an extra colmun called Datatype (TEST=0 or TRAIN=1)
+6. Keep only the columns with means and std deviations
+6. Append the two datasets.
 
 # How to use the script?
 ## Assumptions

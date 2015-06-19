@@ -3,7 +3,11 @@
 x_*.txt contains the actual data, no headers.
 
 y_*.txt contains a ref. to the activity labels (6 labels) for each variable.
+
 Features.txt contains the variables and are the "headernames" for the dataset.
+
+subject.txt contains the ID of the subjects.
+
 In the final tidy DS we should end up with something like:
 
 **activity,subject,feature1,feature2,...,featureN**
@@ -20,13 +24,13 @@ Activity  : one of the following values {walking,walking_upstairs,walking_downst
 
 Subject   : a number from 1 to 30
 
-feature_i  : a description of the feature (only the means and the stddevs), e.g. meanBodyAccelarationX, meanGravityAccelarationY, ...
+feature_i  : a clear and meaningfull description of the feature (only the means and the stddevs), e.g. **meanBodyAccelarationX, meanGravityAccelarationY, ...**
 
-##The algorithm:
+##The algorithm, for more details see the R script:
 
 1. create a DS with headers from features.txt. This part includes cleaning and providing clear names for variables.
 2. add an extra column with "activity"
-3. fill this column with resolved activity (activity number is replaced by its name from activit_lables.txt
+3. fill this column with resolved activity (activity number is replaced by its name from activit_lables.txt)
 4. add an extra colmun with "subject"
 4. Fill the other columns with the data coming from x_*.txt
 5. Do this for both DS (DS_train, DS_test)

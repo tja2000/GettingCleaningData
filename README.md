@@ -13,4 +13,14 @@ Features.txt contains the variables and are the "headernames" for the dataset.
 6. Create a new DS with sames number of colmuns as the previous ones
 7. Add an extra colmun called Datatype (TEST=0 or TRAIN=1)
 
+# How to use the script?
+## Assumptions
+The script assume that it is run from the directory where the data resides including the subfolders as extracted from the zip:
+Thus: 
+UCI HAR Dataset <- script should be run from here, all other TXT files as in the ZIP must also be here.
+  \test\...
+  \train\...
+
+Run the script, no parameters are needed. The results are in CleanSamsungS.txt
+  
 # CODEBOOK

@@ -19,6 +19,8 @@ Subject   : a number from 1 to 30
 
 feature_i  : a description of the feature (only the means and the stddevs), e.g. meanBodyAccelarationX, meanGravityAccelarationY, ...
 
+##The algorithm:
+
 1. create a DS with headers from features.txt
 2. add an extra column with "activity"
 3. 3. fill this column with resolved activity (activity number is replaced by its name from activit_lables.txt

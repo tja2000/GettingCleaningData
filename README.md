@@ -28,7 +28,7 @@ feature_i  : a clear and meaningfull description of the feature (only the means 
 
 ##The algorithm, for more details see the R script:
 
-1. create a DS with headers from features.txt. This part includes cleaning and providing clear names for variables.
+1. create a list with headers from features.txt. This part includes cleaning and providing clear names for variables.
 2. add an extra column with "activity"
 3. fill this column with resolved activity (activity number is replaced by its name from activit_lables.txt)
 4. add an extra colmun with "subject"
@@ -39,7 +39,7 @@ feature_i  : a clear and meaningfull description of the feature (only the means 
 
 # How to use the script?
 ## Assumptions
-The script assume that it is run from the directory where the data resides including the subfolders as extracted from the zip.
+The script assumes that it is run from the directory where the data resides including the subfolders as extracted from the zip.
 
 UCI HAR Dataset <- script should be run from here, all other TXT files as in the ZIP must also be here.
 

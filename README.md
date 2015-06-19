@@ -7,13 +7,9 @@ Features.txt contains the variables and are the "headernames" for the dataset.
 In the final tidy DS we should end up with something like:
 
 **activity,subject,feature1,feature2,...,featureN**
-
 *activityName1,1,number,number,number,number*
-
 *...,...,...,...,...,...,*
-
 *activityNameN,30,number,number,number,number*
-
 
 Where:
 

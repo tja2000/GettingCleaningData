@@ -9,5 +9,8 @@ Features.txt contains the variables and are the "headernames" for the dataset.
 2. add an extra column with "activity"
 3. fill this column with resolved activity (activity number is replaced by its name from activit_lables.txt
 4. Fill the other columns with the data coming from x_*.txt
+5. Do this for both DS (DS_train, DS_test)
+6. Create a new DS with sames number of colmuns as the previous ones
+7. Add an extra colmun called Datatype (TEST=0 or TRAIN=1)
 
 # CODEBOOK

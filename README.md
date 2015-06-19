@@ -21,9 +21,9 @@ feature_i  : a description of the feature (only the means and the stddevs), e.g.
 
 ##The algorithm:
 
-1. create a DS with headers from features.txt
+1. create a DS with headers from features.txt. This part includes cleaning and providing clear names for variables.
 2. add an extra column with "activity"
-3. 3. fill this column with resolved activity (activity number is replaced by its name from activit_lables.txt
+3. fill this column with resolved activity (activity number is replaced by its name from activit_lables.txt
 4. add an extra colmun with "subject"
 4. Fill the other columns with the data coming from x_*.txt
 5. Do this for both DS (DS_train, DS_test)

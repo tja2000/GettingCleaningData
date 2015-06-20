@@ -28,11 +28,10 @@ feature_i : a clear and meaningfull description of the feature (only the means a
 
 #The algorithm
 
-1. Create a dataset with headers from features.txt. This part includes cleaning and providing clear names for variables. For the exercise we just removed some characters, no real logic was used to get clean and set meaningful names.
-2. Fill the other columns with the data coming from x_*.txt (the sample data).
-3. Add an extra column with "activity" and fill this column with resolved activity (activity number is replaced by its name from activity_lables.txt).
+1. Create a dataset with the data coming from x_*.txt (the sample data).
+2. Add an extra column with "activity" and fill this column with resolved activity 
 3. Add an extra colmun with "subject" coming from the subject files.
-4. 5. Do this for both datasets (DS_train, DS_test).
+4. Do this for both datasets (DS_train, DS_test).
 6. Keep only the columns with means and std deviations in their description.
 7. Append the two datasets.
 8. Aggregate over the activty and means
@@ -42,9 +41,11 @@ feature_i : a clear and meaningfull description of the feature (only the means a
 For more details on the different functions see the R script.
 There are several functions in the code. The idea is to create generic functions that can be used for any dataset.
 In the main part of the script we do the folloing:
-1. initialize the global variables: mostly paths and datasets for features and labels that are the same across the datasets.
-2. A generic function Create_Full_Dataset generates a complete dataset including the extra colmuns subject and activity. These columns are added through a generic function. In case of the activity (Get_Activity_Names) there  is some logic built-in to replace the actvity number into full text.
+1. initialize the global variables: mostly paths but also 2 datasets for features and labels that are the used across the script.
+2. A generic function **Create_Full_Dataset** generates a complete dataset including the extra colmuns subject and activity. These columns are added through generic functions. In case of the activity (Get_Activity_Names) there  is some logic built-in to replace the actvity number into full text.
 3. The 2 datasets (TEST and TRAIN) are bound together into a single dataset (ds_full).
-4. Using GREP we only keep the columns we need.
-5. This dataset is then aggregated over actvity and subject into a tidy dataset called ds_aggregated.
+4. Using GREP we only keep the columns we need. We store it in ds_clean.
+5. This dataset (`ds_clean`) is then aggregated over actvity and subject into a tidy dataset called ds_aggregated.
 6. The dataset ds_aggregated is then written to a file.
+ 
+

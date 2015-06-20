@@ -49,6 +49,9 @@ In the main part of the script we do the folloing:
 4. Using GREP we only keep the columns we need. We store it in ds_clean.
 5. This dataset (`ds_clean`) is then aggregated over actvity and subject into a tidy dataset called `ds_aggregated`.
 6. The dataset `ds_aggregated` is then written to a file.
+7. 
+#Remark
+The aggregate generates NA warnings. This is not covered in the solution due to time constraints.
  
 
  

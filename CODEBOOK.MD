@@ -1,12 +1,12 @@
 # My interpretation of the project
 
-x_*.txt contains the actual data, no headers.
+> x_*.txt contains the actual data, no headers.
 
-y_*.txt contains a reference to the activity labels (6 labels) for each variable.
+> y_*.txt contains a reference to the activity labels (6 labels) for each variable.
 
-features.txt contains the variables and are the "headernames" for the dataset.
+> features.txt contains the variables and are the "headernames" for the dataset.
 
-subject.txt contains the ID of the subjects.
+> subject.txt contains the ID of the subjects.
 
 In the final tidy DS we should end up with something like:
 
@@ -22,9 +22,9 @@ Where:
 
 > Activity  : one of the following values {walking,walking_upstairs,walking_downstairs,sitting,standing,laying}
 
-Subject   : a number from 1 to 30
+> Subject   : a number from 1 to 30
 
-feature_i : a clear and meaningfull description of the feature (only the means and the stddevs), e.g. **meanBodyAccelarationX, meanGravityAccelarationY, ...**
+> feature_i : a clear and meaningfull description of the feature (only the means and the stddevs), e.g. **meanBodyAccelarationX, meanGravityAccelarationY, ...**
 
 #The algorithm
 

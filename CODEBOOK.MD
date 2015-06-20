@@ -1,5 +1,5 @@
 # My interpretation of the project
-There are several files containing data, here is how interprete them:
+There are several files containing data, here is how I interprete them:
 
 > x_*.txt contains the actual data, no headers.
 
@@ -7,7 +7,7 @@ There are several files containing data, here is how interprete them:
 
 > features.txt contains the variables and are the "headernames" for the dataset.
 
-> subject.txt contains the ID of the subjects.
+> subject.txt contains the ID of the subjects per sample.
 
 In the final tidy DS we should end up with something like:
 
@@ -29,10 +29,10 @@ Where:
 
 #The algorithm
 
-1. Create a dataset with the data coming from x_*.txt (the sample data).
-2. Add an extra column with "activity" and fill this column with resolved activity.
+1. Create a dataset with the data coming from (set)_*.txt (set = the sample data, train or test).
+2. Add an extra column with "activity" and fill this column with resolved activity (numers are names).
 3. Add an extra colmun with "subject" coming from the subject files.
-4. Do this for both datasets (DS_train, DS_test).
+4. Do this for both datasets (train, test).
 6. Keep only the columns with means and std deviations in their description.
 7. Append the two datasets.
 8. Aggregate over the activty and means.

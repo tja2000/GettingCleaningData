@@ -20,7 +20,7 @@ In the final tidy DS we should end up with something like:
 
 Where:
 
-Activity  : one of the following values {walking,walking_upstairs,walking_downstairs,sitting,standing,laying}
+> Activity  : one of the following values {walking,walking_upstairs,walking_downstairs,sitting,standing,laying}
 
 Subject   : a number from 1 to 30
 

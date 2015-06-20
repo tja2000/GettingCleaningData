@@ -41,12 +41,12 @@ Where:
 #Code
 For more details on the different functions see the R script.
 There are several functions in the code. The idea is to create generic functions that can be used for any dataset.
-In the main part of the script we do the folloing:
+In the main part of the script we do the following:
 
 1. initialize the global variables: mostly paths but also 2 datasets for features and labels that are the used across the script.
 2. A generic function `Create_Full_Dataset` generates a complete dataset including the extra colmuns subject and activity. These columns are added through generic functions. In case of the activity (`Get_Activity_Names`) there  is some logic built-in to replace the actvity number into full text.
 3. The 2 datasets (TEST and TRAIN) are bound together into a single dataset (`ds_full`).
-4. Using GREP we only keep the columns we need. We store it in ds_clean.
+4. Using GREP we only keep the columns we need. We store it in `ds_clean`.
 5. This dataset (`ds_clean`) is then aggregated over actvity and subject into a tidy dataset called `ds_aggregated`.
 6. The dataset `ds_aggregated` is then written to a file.
 

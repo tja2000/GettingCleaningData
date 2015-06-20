@@ -1,5 +1,5 @@
 # Assumptions
-The script assumes that it is run from the directory where the data resides including the subfolders as extracted from the zip.
+The script assumes that it is run from the directory where the data resides including the subfolders as extracted from the zip. No checks are done on the existance of the directories or files.
 
 Directory: 
 \\UCI HAR Dataset <- script should be run from here, all other TXT files as in the ZIP must also be here.
